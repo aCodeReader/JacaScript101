@@ -1,0 +1,22 @@
+body{
+   background:black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column
+}
+p{
+    color: crimson;
+    font-size: 50px
+}
+button{
+    border: goldenrod 2px solid;
+    font-size: 36px; 
+    background: black;
+    color: crimson
+}
+button:hover{
+    background:lightsalmon;
+    transform: scale(2,2);
+    color: black
+}

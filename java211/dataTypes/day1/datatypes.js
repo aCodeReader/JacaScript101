@@ -75,3 +75,7 @@ if(ki && bi){
   } else {
   console.log('All False')
   }
+
+  function displayDate(){
+    document.getElementById("sDate").innerHTML = Date();
+  }
