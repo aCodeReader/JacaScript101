@@ -15,6 +15,15 @@ body{
     justify-content: center;
     
 }
+#restart{
+    color: limegreen;
+    font-size: 36px;
+    text-decoration: none;
+    
+}
+#restart:hover{
+  color: red;
+}
 
 #message{
     color: limegreen;

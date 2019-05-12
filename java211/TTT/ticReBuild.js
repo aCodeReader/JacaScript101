@@ -1,5 +1,9 @@
 function startGame() {
+    for(var i = 1; i <= 9; i++){
+        reset(i);
+    }
     document.turn ='X';
+    document.winner = null;
     setMess(document.turn + " goes first")
 }
 
@@ -8,7 +12,9 @@ document.getElementById('message').innerText = msg;
 }
 
 function mark(column){
-    if(column.innerText == '') {
+    if (document.winner != null){
+    setMess(document.turn + " HAS BEATEN YOU")
+    }else if(column.innerText == '') {
     column.innerText = document.turn;
     switchT();
     } else {
@@ -18,8 +24,8 @@ function mark(column){
 
 function switchT() {
     if (checkForWinner(document.turn)){
-        console.log('winner')
         setMess("Winner!! " + document.turn + " is the Winner!!")
+        document.winner = document.turn;
     } else if(document.turn == 'X') {
         document.turn = 'O';
         setMess("It is " + document.turn + "'s turn")
@@ -32,7 +38,6 @@ function switchT() {
 
     function checkForWinner(move){
         let result = false;
-        console.log('checking')
      if(checkRow(1,2,3, move) ||
         checkRow(4,5,6, move) ||
         checkRow(7,8,9, move) ||
@@ -47,16 +52,17 @@ function switchT() {
     }
 
 function checkRow(a, b, c, move){
-    console.log('checkrow')
     let result = false;
-    console.log(getBox(a))
     if(getBox(a) == move && getBox(b) == move && getBox(c) == move ){
         result = true;
     }
     return result;
 }
 function getBox(number) {
-    console.log(number)
     return document.getElementById("s" + number).innerText;
     
+}
+
+function reset(number) {
+    document.getElementById("s"+ number).innerText = "";
 }
