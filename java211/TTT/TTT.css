@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+}
+.mainCon{
+    /* border: 2px red solid; */
+    height: 550px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#message{
+    color: limegreen;
+    font-size: 36px
+}
+
+.plyr-sel{
+    /* border: 2px purple solid; */
+/* height: 5%; */
+margin: 2em;
+}
+.board{
+    height: 95%;
+    /* border: 2px solid lime; */
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    /* border: 1px gray solid; */
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    width: 33%;
+    border: 2px whitesmoke solid;
+    color: limegreen;
+    font-size: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ply-btn{
+    /* border: 1px solid whitesmoke; */
+    color: limegreen;
+    background-color: black;
+    height: 36px;
+    margin: 1.5em;
+    font-size: 95%
+}
+h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    margin: 2em;
+}
+.draw{
+    margin-right: 2em;
+    margin-left: 2em;
+}
