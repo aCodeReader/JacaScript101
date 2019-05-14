@@ -72,13 +72,13 @@ h1{
     justify-content: center;
     margin: 0px;
 }
-.score{
+#score{
     display: flex;
     flex-direction: row;
     color: whitesmoke;
     margin: 2em;
 }
-.draw{
+#draw{
     margin-right: 2em;
     margin-left: 2em;
 }
