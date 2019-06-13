@@ -20,6 +20,7 @@
 
   document.getElementById("btn").onclick = function(){
     outputText.value = pigLatin(inputText.value);
+    console.log(inputText.value)
   }
 
 

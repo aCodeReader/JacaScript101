@@ -44,7 +44,7 @@ function switchT() {
             tie++
             draw.innerHTML = `Draw: ${tie}`
         } 
-     
+    
     } else if(document.turn == 'X') {
         document.turn = 'O';
         setMess("It is " + document.turn + "'s turn")
